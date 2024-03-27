@@ -782,12 +782,13 @@ console.log('helsinkiRestaurants', helsinkiRestaurants);
 /*
 restaurants.sort((a, b) => a.companyId - b.companyId);
 console.log('restaurants sorted by companyId', restaurants);
-*/
+
 
 const newRestaurantList = [...restaurants].sort((a, b) =>
   a.name.toLowerCase().trim().localeCompare(b.name.toLowerCase().trim())
 );
 console.log('restaurants sorted by name', newRestaurantList);
+*/
 
 const newRestaurantLista = [...restaurants].sort((a, b) => {
   return a.name.toLowerCase().trim().localeCompare(b.name.toLowerCase().trim());
