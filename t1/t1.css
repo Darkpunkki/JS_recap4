@@ -56,3 +56,7 @@ li input[type='checkbox']:checked + label {
   color: black;
   font-weight: bold;
 }
+
+.nopadded {
+  padding: 0;
+}

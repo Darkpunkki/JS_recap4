@@ -11,7 +11,7 @@
   <body>
     <h1>Todo List</h1>
     <ul>
-      <!-- add todo list conent here -->
+      <!-- add todo list content here -->
     </ul>
     <dialog>
       <h2>Add Todo Item</h2>
@@ -21,6 +21,36 @@
         <button>Delete</button>
       </form>
     </dialog>
+    <!-- Modal Structure -->
+    <div
+      id="addTodoModal"
+      style="
+        display: none;
+        position: fixed;
+        z-index: 100;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 250px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      "
+    >
+      <span
+        id="closeModal"
+        style="cursor: pointer; float: right; font-size: 20px"
+        >&times;</span
+      >
+      <h2>Add New</h2>
+      <form action="">
+        <label for="new-todo" class="nopadded">Add a new todo</label>
+        <input type="text" id="new-text" />
+        <button id="save-btn" type="button">Save</button>
+      </form>
+    </div>
+
     <button class="add-btn">Add Todo Item</button>
   </body>
 </html>
